@@ -55,8 +55,17 @@ right_button = Button(250, 160, right_image)
 left_button = Button(50, 160, left_image)
 
 
+def turn_right():
+    print("right")
 
+def turn_left():
+    print("left")
 
+def forward():
+    print("forward")
+
+def backward():
+    print("backward")
 
 def game_loop():
     clock = pygame.time.Clock()
@@ -70,13 +79,13 @@ def game_loop():
         WIN.fill(COLOR1)
         pygame.draw.rect(WIN, WHITE, SCR_BORDER)
         if up_button.draw():
-            print("up")
+            forward()
         if down_button.draw():
-            print("down")
+            backward()
         if right_button.draw():
-            print("right")
+            turn_right()
         if left_button.draw():
-            print("left")
+            turn_left()
         pygame.display.update()
 
     pygame.quit()
