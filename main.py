@@ -5,7 +5,7 @@ from colors import *
 
 #To intiate module parts
 pygame.init()
-WIDTH, HEIGHT = 800, 400
+WIDTH, HEIGHT = 400, 400
 #To set the window...
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("SpiderBot 1.0")
@@ -75,9 +75,17 @@ def game_loop():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_UP or event.key == pygame.K_w:
+                    forward()
+                elif event.key == pygame.K_DOWN or event.key == pygame.K_s:
+                    backward()
+                elif event.key == pygame.K_RIGHT or event.key == pygame.K_d:
+                    turn_right()
+                elif event.key == pygame.K_LEFT or event.key == pygame.K_a:
+                    turn_left()
 
         WIN.fill(COLOR1)
-        pygame.draw.rect(WIN, WHITE, SCR_BORDER)
         if up_button.draw():
             forward()
         if down_button.draw():
