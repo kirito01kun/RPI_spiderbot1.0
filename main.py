@@ -1,7 +1,12 @@
 import os
 import pygame
+from adafruit_servokit import ServoKit
 from pygame.locals import *
 from colors import *
+#To choose the used kit
+kit = ServoKit(channels=16)
+
+#kit.servo[0].angle = 180
 
 #To intiate module parts
 pygame.init()
@@ -57,6 +62,7 @@ left_button = Button(50, 160, left_image)
 
 def turn_right():
     print("right")
+    #kit.servo[0].angle = 180 ... 0 is the number of servo and 180 is the angle
 
 def turn_left():
     print("left")
