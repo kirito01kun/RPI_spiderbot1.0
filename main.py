@@ -62,10 +62,11 @@ left_button = Button(50, 160, left_image)
 
 def turn_right():
     print("right")
-    #kit.servo[0].angle = 180 ... 0 is the number of servo and 180 is the angle
+    kit.servo[0].angle = 180# ... 0 is the number of servo and 180 is the angle
 
 def turn_left():
     print("left")
+    kit.servo[0].angle = 0
 
 def forward():
     print("forward")
