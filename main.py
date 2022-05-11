@@ -1,4 +1,5 @@
 import os
+import time
 import pygame
 from adafruit_servokit import ServoKit
 from pygame.locals import *
@@ -63,10 +64,16 @@ left_button = Button(50, 160, left_image)
 def turn_right():
     print("right")
     kit.servo[0].angle = 180# ... 0 is the number of servo and 180 is the angle
+    kit.servo[1].angle = 180
+    kit.servo[2].angle = 90
+    kit.servo[3].angle = 90
 
 def turn_left():
     print("left")
     kit.servo[0].angle = 0
+    kit.servo[1].angle = 0
+    kit.servo[2].angle = 0
+    kit.servo[3].angle = 0
 
 def forward():
     print("forward")
