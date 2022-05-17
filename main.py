@@ -79,8 +79,8 @@ move4_btn = Button(450, 260, move4_image)
 
 def turn_right():
     print("right")
-    kit.servo[0].angle = 180# ... 0 is the number of servo and 180 is the angle
-    kit.servo[1].angle = 180
+    kit.servo[0].angle = 90# ... 0 is the number of servo and 180 is the angle
+    kit.servo[1].angle = 90
     kit.servo[2].angle = 90
     kit.servo[3].angle = 90
 
