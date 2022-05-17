@@ -101,9 +101,9 @@ def move1():
     x = 1
     up = true
     while(1):
-        if x = 50:
+        if x == 50:
             up = false
-        if x = 0:
+        if x == 0:
             up = true        
         kit.servo[0].angle = x
         kit.servo[1].angle = x
