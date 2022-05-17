@@ -98,6 +98,19 @@ def backward():
 
 def move1():
     print("move 1")
+    x = 1
+    up = true
+    while(1):
+        if x = 50:
+            up = false
+        if x = 0:
+            up = true        
+        kit.servo[0].angle = x
+        kit.servo[1].angle = x
+        if up:
+            x += 1
+        else:
+            x -= 1
 
 def move2():
     print("move 2")
