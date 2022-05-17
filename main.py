@@ -1,11 +1,11 @@
 import os
 import time
 import pygame
-#from adafruit_servokit import ServoKit
+from adafruit_servokit import ServoKit
 from pygame.locals import *
 from colors import *
 #To choose the used kit
-#kit = ServoKit(channels=16)
+kit = ServoKit(channels=16)
 
 #kit.servo[0].angle = 180
 
