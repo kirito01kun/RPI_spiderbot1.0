@@ -101,7 +101,7 @@ def move1():
     x = 1
     up = 1
     while(1):
-        if x == 50:
+        if x == 70:
             up = 0
         if x == 0:
             up = 1
@@ -111,6 +111,7 @@ def move1():
             x += 1
         else:
             x -= 1
+        time.sleep(0.05)
 
 def move2():
     print("move 2")
