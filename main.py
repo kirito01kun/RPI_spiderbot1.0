@@ -99,15 +99,15 @@ def backward():
 def move1():
     print("move 1")
     x = 1
-    up = true
+    up = 1
     while(1):
         if x == 50:
-            up = false
+            up = 0
         if x == 0:
-            up = true        
+            up = 1
         kit.servo[0].angle = x
         kit.servo[1].angle = x
-        if up:
+        if up == 1:
             x += 1
         else:
             x -= 1
