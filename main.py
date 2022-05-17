@@ -111,7 +111,7 @@ def move1():
             x += 1
         else:
             x -= 1
-        time.sleep(0.05)
+        #time.sleep(0.05)
 
 def move2():
     print("move 2")
