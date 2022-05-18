@@ -87,6 +87,9 @@ def turn_right():
     time.sleep(5)
     kit.servo[0].angle = 70
     print('70')
+    time.sleep(5)
+    kit.servo[0].angle = 90
+    print('90')
     
 
 def turn_left():
