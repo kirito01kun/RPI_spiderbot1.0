@@ -79,16 +79,21 @@ move4_btn = Button(450, 260, move4_image)
 
 def turn_right():
     print("right")
-    kit.servo[0].angle = 90# ... 0 is the number of servo and 180 is the angle
-    kit.servo[1].angle = 90
-    kit.servo[2].angle = 90
-    kit.servo[3].angle = 90
+    kit.servo[0].angle = 90
+    print('90')
+    time.sleep(5)
+    kit.servo[0].angle = 110
+    print('110')
+    time.sleep(5)
+    kit.servo[0].angle = 70
+    print('70')
+    
 
 def turn_left():
     i = 0
     print("left")
     for i in range(16):
-        kit.servo[i].angle = 0
+        kit.servo[i].angle = 90
 
 def forward():
     print("forward")
