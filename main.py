@@ -6,7 +6,7 @@ from pygame.locals import *
 from colors import *
 #To choose the used kit
 kit = ServoKit(channels=16)
-
+#this comment to tes github token
 #kit.servo[0].angle = 180
 
 #To intiate module parts
