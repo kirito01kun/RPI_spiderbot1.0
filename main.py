@@ -116,12 +116,11 @@ def start_position():
     
     
 def ready_legs():
-    global FR2
-    global FR3
+    print("ready legs")
     #front right Leg
-    FR2 += 45
+    FR2 = 135
     time.sleep(1)
-    FR3 += 45    
+    FR3 = 135    
     
 def forward():
     print("forward")
