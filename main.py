@@ -116,6 +116,8 @@ def start_position():
     
     
 def ready_legs():
+    global FR2
+    global FR3
     #front right Leg
     FR2 += 45
     sleep.time(1)
