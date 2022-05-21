@@ -91,9 +91,11 @@ def turn_right():
     kit.servo[0].angle = 90
     print('90')
     
-
 def turn_left():
     print("left")
+    
+def start_position():
+    print("start post)
     kit.servo[0].angle = 92#Front Right 1
     kit.servo[1].angle = 90#Front Right 2
     kit.servo[2].angle = 90#Front Right 3
@@ -158,7 +160,7 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
-            move1()
+            start_position()
         if move2_btn.draw():
             move2()
         if move3_btn.draw():
