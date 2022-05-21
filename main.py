@@ -45,6 +45,21 @@ move4_image = pygame.image.load(os.path.join('Assets', 'hexagon_orange.png'))
 #spider = pygame.transform.scale(spider, (spider_height, spider_width))# Change the size of the spider element
 #spider = pygame.transform.rotate(spider, 90) #Rotate spider element
 
+
+FR1 = kit.servo[0].angle = 92#Front Right 1
+FR2 = kit.servo[1].angle = 90#Front Right 2
+FR3 = kit.servo[2].angle = 90#Front Right 3
+FL1 = kit.servo[3].angle = 90#Front Left 1
+FL2 = kit.servo[4].angle = 84#Front Left 2
+FL3 = kit.servo[5].angle = 90#Front Left 3
+BR1 = kit.servo[6].angle = 90#Back Right 1
+BR2 = kit.servo[7].angle = 90#Back Right 2
+BR3 = kit.servo[8].angle = 90#Back Right 3
+BL1 = kit.servo[9].angle = 97#Back Left 1
+BL2 = kit.servo[10].angle = 84#Back Left 2
+BL3 = kit.servo[11].angle = 90#Back Left 3
+
+
 class Button():
     def __init__(self, x_pos, y_pos, image):
         self.image = image
@@ -79,35 +94,30 @@ move4_btn = Button(450, 260, move4_image)
 
 def turn_right():
     print("right")
-    kit.servo[0].angle = 90
-    print('90')
-    time.sleep(5)
-    kit.servo[0].angle = 110
-    print('110')
-    time.sleep(5)
-    kit.servo[0].angle = 70
-    print('70')
-    time.sleep(5)
-    kit.servo[0].angle = 90
-    print('90')
     
 def turn_left():
     print("left")
     
+def ready_legs():
+    #front right Leg
+    FR2 = 90
+    FR3 = 90
+    
+    
 def start_position():
-    print("start post)
-    kit.servo[0].angle = 92#Front Right 1
-    kit.servo[1].angle = 90#Front Right 2
-    kit.servo[2].angle = 90#Front Right 3
-    kit.servo[3].angle = 90#Front Left 1
-    kit.servo[4].angle = 84#Front Left 2
-    kit.servo[5].angle = 90#Front Left 3
-    kit.servo[6].angle = 90#Back Right 1
-    kit.servo[7].angle = 90#Back Right 2
-    kit.servo[8].angle = 90#Back Right 3
-    kit.servo[9].angle = 97#Back Left 1
-    kit.servo[10].angle = 84#Back Left 2
-    kit.servo[11].angle = 90#Back Left 3
+    print("start post")
+    FR1 = 92#Front Right 1
+    FR2 = 90#Front Right 2
+    FR3 = 90#Front Right 3
+    FL1 = 90#Front Left 1
+    FL2 = 84#Front Left 2
+    FL3 = 90#Front Left 3
+    BR1 = 90#Back Right 1
+    BR2 = 90#Back Right 2
+    BR3 = 90#Back Right 3
+    BL1 = 97#Back Left 1
+    BL2 = 84#Back Left 2
+    BL3 = 90#Back Left 3
 
 def forward():
     print("forward")
@@ -117,10 +127,6 @@ def backward():
 
 def move1():
     print("move 1")
-    #ready front right leg...
-    kit.servo[1].angle = 130
-    time.sleep(2)
-    kit.servo[2].angle = 130
 
 def move2():
     print("move 2")
