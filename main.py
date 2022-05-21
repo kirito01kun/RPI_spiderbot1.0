@@ -94,8 +94,18 @@ def turn_right():
 
 def turn_left():
     print("left")
-    for i in range(12):
-        kit.servo[i].angle = 90
+    kit.servo[0].angle = 92#Front Right 1
+    kit.servo[1].angle = 90#Front Right 2
+    kit.servo[2].angle = 90#Front Right 3
+    kit.servo[3].angle = 90#Front Left 1
+    kit.servo[4].angle = 90#Front Left 2
+    kit.servo[5].angle = 90#Front Left 3
+    kit.servo[6].angle = 90#Back Right 1
+    kit.servo[7].angle = 90#Back Right 2
+    kit.servo[8].angle = 90#Back Right 3
+    kit.servo[9].angle = 90#Back Left 1
+    kit.servo[10].angle = 90#Back Left 2
+    kit.servo[11].angle = 95#Back Left 3
 
 def forward():
     print("forward")
