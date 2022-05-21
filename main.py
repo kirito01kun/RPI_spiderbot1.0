@@ -98,12 +98,6 @@ def turn_right():
 def turn_left():
     print("left")
     
-def ready_legs():
-    #front right Leg
-    FR2 += 45
-    sleep.time(1)
-    FR3 += 45
-    
     
 def start_position():
     print("start post")
@@ -119,7 +113,14 @@ def start_position():
     BL1 = 97#Back Left 1
     BL2 = 84#Back Left 2
     BL3 = 90#Back Left 3
-
+    
+    
+def ready_legs():
+    #front right Leg
+    FR2 += 45
+    sleep.time(1)
+    FR3 += 45    
+    
 def forward():
     print("forward")
 
