@@ -93,9 +93,8 @@ def turn_right():
     
 
 def turn_left():
-    i = 0
     print("left")
-    for i in range(16):
+    for i in range(12):
         kit.servo[i].angle = 90
 
 def forward():
@@ -106,20 +105,10 @@ def backward():
 
 def move1():
     print("move 1")
-    x = 1
-    up = 1
-    while(1):
-        if x == 70:
-            up = 0
-        if x == 0:
-            up = 1
-        kit.servo[0].angle = x
-        kit.servo[1].angle = x
-        if up == 1:
-            x += 1
-        else:
-            x -= 1
-        #time.sleep(0.05)
+    #ready front right leg...
+    kit.servo[1].angle = 130
+    time.sleep(2)
+    kit.servo[2].angle = 130
 
 def move2():
     print("move 2")
