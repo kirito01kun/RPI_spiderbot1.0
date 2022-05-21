@@ -100,8 +100,9 @@ def turn_left():
     
 def ready_legs():
     #front right Leg
-    FR2 = 90
-    FR3 = 90
+    FR2 += 45
+    sleep.time(1)
+    FR3 += 45
     
     
 def start_position():
@@ -166,6 +167,9 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
+            start_position()
+            ready_legs()
+            time.sleep(3)
             start_position()
         if move2_btn.draw():
             move2()
