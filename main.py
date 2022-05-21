@@ -120,7 +120,7 @@ def ready_legs():
     global FR3
     #front right Leg
     FR2 += 45
-    sleep.time(1)
+    time.sleep(1)
     FR3 += 45    
     
 def forward():
