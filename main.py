@@ -170,8 +170,9 @@ def game_loop():
             turn_left()
         if move1_btn.draw():
             start_position()
+            time.sleep(5)
             ready_legs()
-            time.sleep(3)
+            time.sleep(5)
             start_position()
         if move2_btn.draw():
             move2()
