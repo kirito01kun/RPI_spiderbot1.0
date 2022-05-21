@@ -105,7 +105,7 @@ def turn_left():
     kit.servo[8].angle = 90#Back Right 3
     kit.servo[9].angle = 90#Back Left 1
     kit.servo[10].angle = 90#Back Left 2
-    kit.servo[11].angle = 100#Back Left 3
+    kit.servo[11].angle = 110#Back Left 3
 
 def forward():
     print("forward")
