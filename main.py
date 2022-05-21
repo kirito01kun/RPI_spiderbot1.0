@@ -120,9 +120,9 @@ def ready_legs():
     global FR1,FR2,FR3,FL1,FL2,FL3,BR1,BR2,BR3,BL1,BL2,BL3
     print("ready legs")
     #front right Leg
-    kit.servo[1].angle = 135
+    kit.servo[1].angle = 155
     time.sleep(1)
-    kit.servo[2].angle = 135    
+    kit.servo[2].angle = 155    
     
 def forward():
     print("forward")
