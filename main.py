@@ -101,6 +101,7 @@ def turn_left():
     
 def start_position():
     print("start post")
+    global FR1,FR2,FR3,FL1,FL2,FL3,BR1,BR2,BR3,BL1,BL2,BL3
     FR1 = 92#Front Right 1
     FR2 = 90#Front Right 2
     FR3 = 90#Front Right 3
@@ -116,6 +117,7 @@ def start_position():
     
     
 def ready_legs():
+    global FR1,FR2,FR3,FL1,FL2,FL3,BR1,BR2,BR3,BL1,BL2,BL3
     print("ready legs")
     #front right Leg
     FR2 = 135
