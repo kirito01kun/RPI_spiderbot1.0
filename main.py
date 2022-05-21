@@ -101,23 +101,21 @@ def turn_left():
     
 def start_position():
     print("start post")
-    global FR1,FR2,FR3,FL1,FL2,FL3,BR1,BR2,BR3,BL1,BL2,BL3
-    FR1 = 92#Front Right 1
-    FR2 = 90#Front Right 2
-    FR3 = 90#Front Right 3
-    FL1 = 90#Front Left 1
-    FL2 = 84#Front Left 2
-    FL3 = 90#Front Left 3
-    BR1 = 90#Back Right 1
-    BR2 = 90#Back Right 2
-    BR3 = 90#Back Right 3
-    BL1 = 97#Back Left 1
-    BL2 = 84#Back Left 2
-    BL3 = 90#Back Left 3
+    kit.servo[0].angle = 92#Front Right 1
+    kit.servo[1].angle = 90#Front Right 2
+    kit.servo[2].angle = 90#Front Right 3
+    kit.servo[3].angle = 90#Front Left 1
+    kit.servo[4].angle = 84#Front Left 2
+    kit.servo[5].angle = 90#Front Left 3
+    kit.servo[6].angle = 90#Back Right 1
+    kit.servo[7].angle = 90#Back Right 2
+    kit.servo[8].angle = 90#Back Right 3
+    kit.servo[9].angle = 97#Back Left 1
+    kit.servo[10].angle = 84#Back Left 2
+    kit.servo[11].angle = 90#Back Left 3
     
     
 def ready_legs():
-    global FR1,FR2,FR3,FL1,FL2,FL3,BR1,BR2,BR3,BL1,BL2,BL3
     print("ready legs")
     #front right Leg
     kit.servo[1].angle = 155
