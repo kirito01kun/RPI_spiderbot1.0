@@ -103,7 +103,7 @@ def turn_left():
     kit.servo[6].angle = 90#Back Right 1
     kit.servo[7].angle = 90#Back Right 2
     kit.servo[8].angle = 90#Back Right 3
-    kit.servo[9].angle = 90#Back Left 1
+    kit.servo[9].angle = 92#Back Left 1
     kit.servo[10].angle = 90#Back Left 2
     kit.servo[11].angle = 90#Back Left 3
 
