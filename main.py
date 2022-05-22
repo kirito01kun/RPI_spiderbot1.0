@@ -119,7 +119,7 @@ def ready_legs():
     #back left leg
     kit.servo[10].angle = 160
     time.sleep(1)
-    kit.servo[11].angle = 165
+    kit.servo[11].angle = 160
 
 def forward():
     print("forward")
