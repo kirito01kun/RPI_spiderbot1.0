@@ -101,16 +101,16 @@ def turn_left():
     
 def start_position():
     print("start post")
-    #kit.servo[0].angle = 95#Front Right 1
+    kit.servo[0].angle = 95#Front Right 1
     kit.servo[1].angle = 45#Front Right 2
-    #kit.servo[2].angle = 45#Front Right 3
-    #kit.servo[3].angle = 90#Front Left 1
+    kit.servo[2].angle = 45#Front Right 3
+    kit.servo[3].angle = 90#Front Left 1
     kit.servo[4].angle = 45#Front Left 2
-    #kit.servo[5].angle = 45#Front Left 3
-    #kit.servo[6].angle = 90#Back Right 1
+    kit.servo[5].angle = 45#Front Left 3
+    kit.servo[6].angle = 90#Back Right 1
     kit.servo[7].angle = 45#Back Right 2
-    #kit.servo[8].angle = 45#Back Right 3
-    #kit.servo[9].angle = 97#Back Left 1
+    kit.servo[8].angle = 45#Back Right 3
+    kit.servo[9].angle = 97#Back Left 1
     kit.servo[10].angle = 45#Back Left 2
     #kit.servo[11].angle = 45#Back Left 3
     
