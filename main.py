@@ -87,7 +87,7 @@ def turn_left():
     
 def start_position():
     print("start post")
-    kit.servo[2].angle = 0#Front Right 3
+    kit.servo[12].angle = 0#Front Right 3
     kit.servo[5].angle = 0#Front Left 3
     kit.servo[8].angle = 0#Back Right 3
     kit.servo[11].angle = 0#Back Left 3
@@ -107,7 +107,7 @@ def ready_legs():
     #front right Leg
     kit.servo[1].angle = 160
     time.sleep(1)
-    kit.servo[2].angle = 180
+    kit.servo[12].angle = 180
     #front left leg
     kit.servo[4].angle = 160
     time.sleep(1)
@@ -126,8 +126,6 @@ def forward():
     start_position()
     time.sleep(2)
     ready_legs()
-    time.sleep(5)
-    start_position()
 
 def backward():
     print("backward")
