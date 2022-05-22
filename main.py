@@ -46,20 +46,6 @@ move4_image = pygame.image.load(os.path.join('Assets', 'hexagon_orange.png'))
 #spider = pygame.transform.rotate(spider, 90) #Rotate spider element
 
 
-FR1 = kit.servo[0].angle
-FR2 = kit.servo[1].angle
-FR3 = kit.servo[2].angle
-FL1 = kit.servo[3].angle
-FL2 = kit.servo[4].angle
-FL3 = kit.servo[5].angle
-BR1 = kit.servo[6].angle
-BR2 = kit.servo[7].angle
-BR3 = kit.servo[8].angle
-BL1 = kit.servo[9].angle
-BL2 = kit.servo[10].angle
-BL3 = kit.servo[11].angle
-
-
 class Button():
     def __init__(self, x_pos, y_pos, image):
         self.image = image
@@ -118,9 +104,9 @@ def start_position():
 def ready_legs():
     print("ready legs")
     #front right Leg
-    kit.servo[1].angle = 180
+    kit.servo[1].angle = 130
     time.sleep(1)
-    kit.servo[2].angle = 180  
+    kit.servo[2].angle = 130
     
 def forward():
     print("forward")
