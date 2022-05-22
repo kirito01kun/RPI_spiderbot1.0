@@ -111,6 +111,10 @@ def ready_legs():
 def forward():
     print("forward")
     start_position()
+    time.sleep(2)
+    ready_legs()
+    time.sleep(5)
+    start_position()
 
 def backward():
     print("backward")
