@@ -134,6 +134,8 @@ def forward():
     start_position()
     time.sleep(2)
     ready_legs()
+    time.sleep(2)
+    stand_up()
 
 def backward():
     print("backward")
