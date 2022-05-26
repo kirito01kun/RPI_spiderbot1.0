@@ -133,7 +133,7 @@ def stand_up():
     kit.servo[7].angle = 85
     kit.servo[10].angle = 85
 
-def sit_down()
+def sit_down():
     print("sitting down")
     kit.servo[1].angle = 120
     kit.servo[4].angle = 120
