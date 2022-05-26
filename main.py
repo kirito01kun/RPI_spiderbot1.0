@@ -117,9 +117,9 @@ def ready_legs():
     time.sleep(1)
     kit.servo[8].angle = 150
     #back left leg
-    kit.servo[10].angle = 150
+    kit.servo[10].angle = 140
     time.sleep(1)
-    kit.servo[11].angle = 140
+    kit.servo[11].angle = 150
 
 def stand_up():
     print("standing up...")
