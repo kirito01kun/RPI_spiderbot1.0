@@ -127,7 +127,12 @@ def stand_up():
     kit.servo[4].angle = 120
     kit.servo[7].angle = 130
     kit.servo[10].angle = 130
-    time.sleep(2)
+    time.sleep(1)
+    kit.servo[1].angle = 90
+    kit.servo[4].angle = 90
+    kit.servo[7].angle = 100
+    kit.servo[10].angle = 100
+    time.sleep(0.5)
     kit.servo[1].angle = 75
     kit.servo[4].angle = 75
     kit.servo[7].angle = 85
@@ -135,6 +140,11 @@ def stand_up():
 
 def sit_down():
     print("sitting down")
+    kit.servo[1].angle = 90
+    kit.servo[4].angle = 90
+    kit.servo[7].angle = 100
+    kit.servo[10].angle = 100
+    time.sleep(0.5)
     kit.servo[1].angle = 120
     kit.servo[4].angle = 120
     kit.servo[7].angle = 130
