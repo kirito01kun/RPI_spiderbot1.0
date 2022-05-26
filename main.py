@@ -92,7 +92,7 @@ def start_position():
     kit.servo[8].angle = 0#Back Right 3
     kit.servo[11].angle = 0#Back Left 3
     time.sleep(0.5)
-    kit.servo[0].angle = 95#Front Right 1
+    kit.servo[0].angle = 140#Front Right 1
     kit.servo[1].angle = 45#Front Right 2
     kit.servo[3].angle = 90#Front Left 1
     kit.servo[4].angle = 45#Front Left 2
