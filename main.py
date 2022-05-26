@@ -128,10 +128,10 @@ def stand_up():
     kit.servo[7].angle = 130
     kit.servo[10].angle = 130
     time.sleep(2)
-    kit.servo[1].angle = 165
-    kit.servo[4].angle = 165
-    kit.servo[7].angle = 175
-    kit.servo[10].angle = 175
+    kit.servo[1].angle = 75
+    kit.servo[4].angle = 75
+    kit.servo[7].angle = 85
+    kit.servo[10].angle = 85
     
 
 def forward():
