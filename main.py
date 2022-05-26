@@ -149,7 +149,7 @@ def forward():
     ready_legs()
     time.sleep(2)
     stand_up()
-    time.sleep(2)
+    time.sleep(10)
     sit_down()
 
 def backward():
