@@ -135,7 +135,7 @@ def stand_up():
     time.sleep(0.5)
     kit.servo[1].angle = 75
     kit.servo[4].angle = 75
-    kit.servo[7].angle = 85
+    kit.servo[7].angle = 80
     kit.servo[10].angle = 85
 
 def sit_down():
@@ -154,6 +154,7 @@ def sit_down():
 
 def forward():
     print("forward")
+    time.sleep(10)
     start_position()
     time.sleep(2)
     ready_legs()
