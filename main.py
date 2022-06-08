@@ -160,36 +160,36 @@ def backward():
 
 def move1():
     print("rf")
-    kit.servo[1].angle = 65#fr 2 up
+    kit.servo[1].angle = 95#fr 2 up
     time.sleep(0.5)
     kit.servo[0].angle = 170#forward rf le
     time.sleep(0.5)
-    kit.servo[1].angle = 45# fr2 down
+    kit.servo[1].angle = 75# fr2 down
     time.sleep(1)
     kit.servo[3].angle = 75#back Lf leg
     kit.servo[6].angle = 15#back rb leg
     time.sleep(1)
-    kit.servo[10].angle = 65#lb 2 up
+    kit.servo[10].angle = 105#lb 2 up
     time.sleep(0.5)
     kit.servo[9].angle = 105#forward lb leg
     time.sleep(0.5)
-    kit.servo[10].angle = 45#lb 2 down
+    kit.servo[10].angle = 85#lb 2 down
     time.sleep(2)
     # part two
-    kit.servo[4].angle = 65#lf 2 up
+    kit.servo[4].angle = 95#lf 2 up
     time.sleep(0.5)
     kit.servo[3].angle = 15#forward Lf
     time.sleep(0.5)
-    kit.servo[4].angle = 45# lf 2 down
+    kit.servo[4].angle = 75# lf 2 down
     time.sleep(1)
     kit.servo[0].angle = 110# back rf
     kit.servo[9].angle = 165# back lb
     time.sleep(1)
-    kit.servo[7].angle = 45# br 2 up
+    kit.servo[7].angle = 100# br 2 up
     time.sleep(0.5)
     kit.servo[6].angle = 85# Forward br
     time.sleep(0.5)
-    kit.servo[7].angle = 45# br 2 down
+    kit.servo[7].angle = 80# br 2 down
     time.sleep(2)
     
 def move2():
