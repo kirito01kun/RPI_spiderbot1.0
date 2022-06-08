@@ -209,7 +209,7 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
-            start_position()
+            move1()
         if move2_btn.draw():
             move2()
         if move3_btn.draw():
