@@ -154,29 +154,31 @@ def sit_down():
 
 def forward():
     print("forward")
-    time.sleep(10)
-    start_position()
-    time.sleep(2)
-    ready_legs()
-    time.sleep(2)
-    stand_up()
-    time.sleep(10)
-    sit_down()
+    
 
 def backward():
     print("backward")
 
 def move1():
-    print("move 1")
+    print("rf")
 
 def move2():
-    print("move 2")
+    print("lf")
 
 def move3():
-    print("move 3")
+    print("rb")
 
 def move4():
-    print("move 4")
+    print("lb")
+
+time.sleep(10)
+start_position()
+time.sleep(2)
+ready_legs()
+time.sleep(2)
+stand_up()
+time.sleep(10)
+sit_down()
 
 def game_loop():
     clock = pygame.time.Clock()
