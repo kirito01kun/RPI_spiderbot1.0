@@ -161,34 +161,34 @@ def backward():
 def move1():
     print("rf")
     kit.servo[1].angle = 95#fr 2 up
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[0].angle = 170#forward rf le
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[1].angle = 75# fr2 down
-    time.sleep(1)
+    time.sleep(0.3)
     kit.servo[3].angle = 75#back Lf leg
     kit.servo[6].angle = 15#back rb leg
-    time.sleep(1)
+    time.sleep(0.3)
     kit.servo[10].angle = 105#lb 2 up
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[9].angle = 105#forward lb leg
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[10].angle = 85#lb 2 down
     time.sleep(2)
     # part two
     kit.servo[4].angle = 95#lf 2 up
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[3].angle = 15#forward Lf
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[4].angle = 75# lf 2 down
-    time.sleep(1)
+    time.sleep(0.5)
     kit.servo[0].angle = 110# back rf
     kit.servo[9].angle = 165# back lb
-    time.sleep(1)
-    kit.servo[7].angle = 100# br 2 up
     time.sleep(0.5)
+    kit.servo[7].angle = 110# br 2 up
+    time.sleep(0.3)
     kit.servo[6].angle = 85# Forward br
-    time.sleep(0.5)
+    time.sleep(0.3)
     kit.servo[7].angle = 80# br 2 down
     time.sleep(2)
     
@@ -239,7 +239,8 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
-            move1()
+            for i in range(5):
+                move1()
         if move2_btn.draw():
             move2()
         if move3_btn.draw():
