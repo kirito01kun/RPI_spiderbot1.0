@@ -155,12 +155,12 @@ def sit_down():
 def forward():
     print("forward")
     
-
 def backward():
     print("backward")
 
 def move1():
     print("rf")
+    kit.servo[0].angle = 170#Front Right 1
 
 def move2():
     print("lf")
