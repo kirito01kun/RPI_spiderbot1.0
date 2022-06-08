@@ -171,14 +171,14 @@ def move3():
 def move4():
     print("lb")
 
-time.sleep(10)
+#time.sleep(10)
 start_position()
-time.sleep(2)
-ready_legs()
-time.sleep(2)
-stand_up()
-time.sleep(10)
-sit_down()
+#time.sleep(2)
+#ready_legs()
+#time.sleep(2)
+#stand_up()
+#time.sleep(10)
+#sit_down()
 
 def game_loop():
     clock = pygame.time.Clock()
