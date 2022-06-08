@@ -239,6 +239,7 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
+            time.sleep(10)
             for i in range(5):
                 move1()
         if move2_btn.draw():
