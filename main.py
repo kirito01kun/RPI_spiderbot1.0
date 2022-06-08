@@ -160,7 +160,7 @@ def backward():
 
 def move1():
     print("rf")
-    kit.servo[3].angle = 15#Front left 1
+    kit.servo[3].angle = 65#Front left 1
 
 def move2():
     print("lf")
