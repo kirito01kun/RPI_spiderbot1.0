@@ -185,6 +185,10 @@ def forward():
     time.sleep(0.1)
     kit.servo[7].angle = 80# br 2 down
     time.sleep(0.1)
+    kit.servo[0].angle = 140#Front Right 1
+    kit.servo[3].angle = 45#Front Left 1
+    kit.servo[6].angle = 45#Back Right 1
+    kit.servo[9].angle = 135#Back Left 1
     
 def backward():
     print("backward")
@@ -219,6 +223,10 @@ def backward():
     time.sleep(0.1)
     kit.servo[4].angle = 75# fl 2 down
     time.sleep(0.1)
+    kit.servo[0].angle = 140#Front Right 1
+    kit.servo[3].angle = 45#Front Left 1
+    kit.servo[6].angle = 45#Back Right 1
+    kit.servo[9].angle = 135#Back Left 1
 
 def move1():
     print("rf")
