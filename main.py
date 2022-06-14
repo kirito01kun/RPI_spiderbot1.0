@@ -154,13 +154,7 @@ def sit_down():
 
 def forward():
     print("forward")
-    
-def backward():
-    print("backward")
-
-def move1():
-    print("rf")
-    kit.servo[1].angle = 95#fr 2 up
+    kit.servo[1].angle = 105#fr 2 up
     time.sleep(0.1)
     kit.servo[0].angle = 170#forward rf le
     time.sleep(0.1)
@@ -169,14 +163,14 @@ def move1():
     kit.servo[3].angle = 75#back Lf leg
     kit.servo[6].angle = 15#back rb leg
     time.sleep(0.1)
-    kit.servo[10].angle = 105#lb 2 up
+    kit.servo[10].angle = 115#lb 2 up
     time.sleep(0.1)
     kit.servo[9].angle = 105#forward lb leg
     time.sleep(0.1)
     kit.servo[10].angle = 85#lb 2 down
     time.sleep(0.1)
     # part two
-    kit.servo[4].angle = 95#lf 2 up
+    kit.servo[4].angle = 105#lf 2 up
     time.sleep(0.1)
     kit.servo[3].angle = 15#forward Lf
     time.sleep(0.1)
@@ -185,12 +179,49 @@ def move1():
     kit.servo[0].angle = 110# back rf
     kit.servo[9].angle = 165# back lb
     time.sleep(0.1)
-    kit.servo[7].angle = 110# br 2 up
+    kit.servo[7].angle = 120# br 2 up
     time.sleep(0.1)
     kit.servo[6].angle = 85# Forward br
     time.sleep(0.1)
     kit.servo[7].angle = 80# br 2 down
     time.sleep(0.1)
+    
+def backward():
+    print("backward")
+    kit.servo[10].angle = 105#bl 2 up
+    time.sleep(0.1)
+    kit.servo[9].angle = 165#back bl le
+    time.sleep(0.1)
+    kit.servo[10].angle = 85# bl2 down
+    time.sleep(0.1)
+    kit.servo[6].angle = 85#forward br leg
+    kit.servo[3].angle = 15#forward fl leg
+    time.sleep(0.1)
+    kit.servo[1].angle = 95#fr 2 up
+    time.sleep(0.1)
+    kit.servo[0].angle = 110#back fr leg
+    time.sleep(0.1)
+    kit.servo[1].angle = 75#fr down
+    time.sleep(0.1)
+    # part two
+    kit.servo[7].angle = 110#br 2 up
+    time.sleep(0.1)
+    kit.servo[6].angle = 15#back br
+    time.sleep(0.1)
+    kit.servo[7].angle = 80# br 2 down
+    time.sleep(0.1)
+    kit.servo[0].angle = 170# forward rf
+    kit.servo[9].angle = 105# forward lb
+    time.sleep(0.1)
+    kit.servo[4].angle = 95# fl 2 up
+    time.sleep(0.1)
+    kit.servo[3].angle = 75# back fl
+    time.sleep(0.1)
+    kit.servo[4].angle = 75# fl 2 down
+    time.sleep(0.1)
+
+def move1():
+    print("rf")
     
 def move2():
     print("lf")
@@ -239,9 +270,7 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
-            time.sleep(10)
-            for i in range(5):
-                move1()
+            start_position()
         if move2_btn.draw():
             move2()
         if move3_btn.draw():
