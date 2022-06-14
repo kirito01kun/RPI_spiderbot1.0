@@ -247,6 +247,7 @@ def turn_right():
         kit.servo[0].angle = 170# forward rf
         kit.servo[1].angle = 75#fr down
         kit.servo[3].angle = 15#forward fl
+        time.sleep(0.5)
         #part 2
         kit.servo[4].angle = 105# fl 2 up
         time.sleep(0.5)
