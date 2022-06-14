@@ -188,7 +188,7 @@ def forward():
     
 def backward():
     print("backward")
-    kit.servo[10].angle = 105#bl 2 up
+    kit.servo[10].angle = 115#bl 2 up
     time.sleep(0.1)
     kit.servo[9].angle = 165#back bl le
     time.sleep(0.1)
@@ -197,14 +197,14 @@ def backward():
     kit.servo[6].angle = 85#forward br leg
     kit.servo[3].angle = 15#forward fl leg
     time.sleep(0.1)
-    kit.servo[1].angle = 95#fr 2 up
+    kit.servo[1].angle = 105#fr 2 up
     time.sleep(0.1)
     kit.servo[0].angle = 110#back fr leg
     time.sleep(0.1)
     kit.servo[1].angle = 75#fr down
     time.sleep(0.1)
     # part two
-    kit.servo[7].angle = 110#br 2 up
+    kit.servo[7].angle = 120#br 2 up
     time.sleep(0.1)
     kit.servo[6].angle = 15#back br
     time.sleep(0.1)
@@ -213,7 +213,7 @@ def backward():
     kit.servo[0].angle = 170# forward rf
     kit.servo[9].angle = 105# forward lb
     time.sleep(0.1)
-    kit.servo[4].angle = 95# fl 2 up
+    kit.servo[4].angle = 105# fl 2 up
     time.sleep(0.1)
     kit.servo[3].angle = 75# back fl
     time.sleep(0.1)
