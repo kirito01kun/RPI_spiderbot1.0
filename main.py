@@ -253,7 +253,7 @@ def turn_right():
         kit.servo[3].angle = 75# back fl
         kit.servo[4].angle = 75# fl 2 down
         time.sleep(0.1)
-    #part 3
+        #part 3
         kit.servo[10].angle = 115#bl 2 up
         time.sleep(0.1)
         kit.servo[9].angle = 165#back bl
@@ -265,11 +265,11 @@ def turn_right():
         kit.servo[6].angle = 85# Forward br
         kit.servo[7].angle = 80# br 2 down
         time.sleep(0.1)
-        #tgad fl we9fa
-        kit.servo[0].angle = 140#Front Right 1
-        kit.servo[3].angle = 45#Front Left 1
-        kit.servo[6].angle = 45#Back Right 1
-        kit.servo[9].angle = 135#Back Left 1
+        #turn
+        kit.servo[0].angle = 110#Front Right 1
+        kit.servo[3].angle = 15#Front Left 1
+        kit.servo[6].angle = 15#Back Right 1
+        kit.servo[9].angle = 105#Back Left 1
         time.sleep(0.1)
     
 def turn_left():
