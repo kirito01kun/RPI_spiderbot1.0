@@ -239,9 +239,9 @@ def backward():
     time.sleep(0.05)
     kit.servo[9].angle = 135#Back Left 1
 
-def turn_right():
-    print("right")
-    for i in range(2):
+def turn_left():
+    print("left")
+    for i in range(5):
         kit.servo[1].angle = 115#fr 2 up
         time.sleep(0.1)
         kit.servo[0].angle = 170# forward rf
@@ -286,18 +286,73 @@ def turn_right():
             kit.servo[6].angle = j#Br
             time.sleep(0.001)
         
-        time.sleep(0.1)
+        time.sleep(0.001)
     #tgad fl we9fa
     kit.servo[0].angle = 140#Front Right 1
-    time.sleep(0.05)
+    time.sleep(0.001)
     kit.servo[3].angle = 45#Front Left 1
-    time.sleep(0.05)
+    time.sleep(0.001)
     kit.servo[6].angle = 45#Back Right 1
-    time.sleep(0.05)
+    time.sleep(0.001)
     kit.servo[9].angle = 135#Back Left 1
     
-def turn_left():
-    print("left")
+def turn_right():
+    print("rightt")
+    for i in range(5):
+        kit.servo[1].angle = 115#fr 2 up
+        time.sleep(0.1)
+        kit.servo[0].angle = 110#back rf
+        time.sleep(0.1)
+        kit.servo[1].angle = 75#fr down
+        time.sleep(0.1)
+        #part 2
+        kit.servo[4].angle = 115# fl 2 up
+        time.sleep(0.1)
+        kit.servo[3].angle = 15# forward fl
+        time.sleep(0.1)
+        kit.servo[4].angle = 75# fl 2 down
+        time.sleep(0.1)
+        #part 3
+        kit.servo[10].angle = 125#bl 2 up
+        time.sleep(0.1)
+        kit.servo[9].angle = 105#forward bl
+        time.sleep(0.1)
+        kit.servo[10].angle = 85# bl2 down
+        time.sleep(0.1)
+        #part 4
+        kit.servo[7].angle = 130# br 2 up
+        time.sleep(0.1)
+        kit.servo[6].angle = 15#back br
+        time.sleep(0.1)
+        kit.servo[7].angle = 80# br 2 down
+        time.sleep(0.1)
+        #turn
+        for j in range(110, 170, 1):
+            kit.servo[0].angle = j#Fr
+            time.sleep(0.001)
+        
+        for j in range(15, 75, 1):
+            kit.servo[3].angle = j#Fl
+            time.sleep(0.001)
+        
+        for j in range(105, 165, 1):
+            kit.servo[9].angle = j#bl
+            time.sleep(0.001)
+        
+        for j in range(15, 85, 1):
+            kit.servo[6].angle = j#Br
+            time.sleep(0.001)
+        
+        time.sleep(0.001)
+    #tgad fl we9fa
+    kit.servo[0].angle = 140#Front Right 1
+    time.sleep(0.001)
+    kit.servo[3].angle = 45#Front Left 1
+    time.sleep(0.001)
+    kit.servo[6].angle = 45#Back Right 1
+    time.sleep(0.001)
+    kit.servo[9].angle = 135#Back Left 1
+    
     
 def move1():
     print("rf")
