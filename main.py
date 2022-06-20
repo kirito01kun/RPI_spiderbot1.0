@@ -241,40 +241,40 @@ def backward():
 
 def turn_right():
     print("right")
-    for i in range(5):
+    for i in range(10):
         kit.servo[1].angle = 115#fr 2 up
         time.sleep(0.1)
         kit.servo[0].angle = 170# forward rf
         time.sleep(0.1)
         kit.servo[1].angle = 75#fr down
-        time.sleep(1)
+        time.sleep(0.1)
         #part 2
         kit.servo[4].angle = 115# fl 2 up
         time.sleep(0.1)
         kit.servo[3].angle = 75# back fl
         time.sleep(0.1)
         kit.servo[4].angle = 75# fl 2 down
-        time.sleep(1)
+        time.sleep(0.1)
         #part 3
         kit.servo[10].angle = 125#bl 2 up
         time.sleep(0.1)
         kit.servo[9].angle = 165#back bl
         time.sleep(0.1)
         kit.servo[10].angle = 85# bl2 down
-        time.sleep(1)
+        time.sleep(0.1)
         #part 4
         kit.servo[7].angle = 130# br 2 up
         time.sleep(0.1)
         kit.servo[6].angle = 85# Forward br
         time.sleep(0.1)
         kit.servo[7].angle = 80# br 2 down
-        time.sleep(1)
+        time.sleep(0.1)
         #turn
         kit.servo[0].angle = 110#Front Right 1
         kit.servo[3].angle = 15#Front Left 1
         kit.servo[6].angle = 15#Back Right 1
         kit.servo[9].angle = 105#Back Left 1
-        time.sleep(1)
+        time.sleep(0.1)
     #tgad fl we9fa
     kit.servo[0].angle = 140#Front Right 1
     time.sleep(0.05)
