@@ -246,37 +246,45 @@ def turn_right():
         time.sleep(0.1)
         kit.servo[0].angle = 170# forward rf
         kit.servo[1].angle = 75#fr down
-        time.sleep(0.1)
+        time.sleep(1)
         #part 2
         kit.servo[4].angle = 105# fl 2 up
         time.sleep(0.1)
         kit.servo[3].angle = 75# back fl
         kit.servo[4].angle = 75# fl 2 down
-        time.sleep(0.1)
+        time.sleep(1)
         #part 3
         kit.servo[10].angle = 115#bl 2 up
         time.sleep(0.1)
         kit.servo[9].angle = 165#back bl
         kit.servo[10].angle = 85# bl2 down
-        time.sleep(0.1)
+        time.sleep(1)
         #part 4
         kit.servo[7].angle = 120# br 2 up
         time.sleep(0.1)
         kit.servo[6].angle = 85# Forward br
         kit.servo[7].angle = 80# br 2 down
-        time.sleep(0.1)
+        time.sleep(1)
         #turn
         kit.servo[0].angle = 110#Front Right 1
         kit.servo[3].angle = 15#Front Left 1
         kit.servo[6].angle = 15#Back Right 1
         kit.servo[9].angle = 105#Back Left 1
-        time.sleep(0.1)
+        time.sleep(1)
     
 def turn_left():
     print("left")
     
 def move1():
     print("rf")
+    #time.sleep(10)
+    start_position()
+    time.sleep(2)
+    ready_legs()
+    time.sleep(2)
+    stand_up()
+    #time.sleep(10)
+    #sit_down()
     
 def move2():
     print("lf")
@@ -287,14 +295,6 @@ def move3():
 def move4():
     print("lb")
 
-#time.sleep(10)
-start_position()
-time.sleep(2)
-ready_legs()
-time.sleep(2)
-stand_up()
-#time.sleep(10)
-#sit_down()
 
 def game_loop():
     clock = pygame.time.Clock()
@@ -325,7 +325,7 @@ def game_loop():
         if left_button.draw():
             turn_left()
         if move1_btn.draw():
-            start_position()
+            move1()
         if move2_btn.draw():
             move2()
         if move3_btn.draw():
