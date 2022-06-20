@@ -270,15 +270,16 @@ def turn_right():
         kit.servo[7].angle = 80# br 2 down
         time.sleep(0.1)
         #turn
-        for i in range(170, 110, 1):
+        for j in range(170, 110):
             kit.servo[0].angle = i#Fr
-        for i in range(75, 15, 1):
+        
+        for j in range(75, 15):
             kit.servo[3].angle = i#Fl
         
-        for i in range(165, 105, 1):
+        for j in range(165, 105):
             kit.servo[9].angle = i#bl
         
-        for i in range(85, 15, 1):
+        for j in range(85, 15):
             kit.servo[6].angle = i#Br
         
         time.sleep(0.1)
