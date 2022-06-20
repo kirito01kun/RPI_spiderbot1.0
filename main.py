@@ -365,9 +365,9 @@ def turn_right():
 def move1():
     print("rf")
     #time.sleep(10)
-    #start_position()
+    start_position()
     #time.sleep(2)
-    #ready_legs()
+    ready_legs()
     #time.sleep(2)
     stand_up()
     #time.sleep(10)
