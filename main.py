@@ -418,6 +418,10 @@ def move2():
         kit.servo[1].angle = k
         kit.servo[4].angle = k
         time.sleep(0.01)
+    
+    ready_legs()
+    time.sleep(0.2)
+    stand_up()
 
 def move3():
     print("rb")
