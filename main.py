@@ -123,27 +123,37 @@ def stand_up():
     kit.servo[7].angle = 130
     kit.servo[10].angle = 130
     time.sleep(1)
-    kit.servo[1].angle = 90
-    kit.servo[4].angle = 90
-    kit.servo[7].angle = 100
-    kit.servo[10].angle = 100
+    for k in range(120, 90, -1):
+        kit.servo[1].angle = k
+        kit.servo[4].angle = k
+        time.sleep(0.001)
+    
+    for k in range(130, 100, -1):
+        kit.servo[7].angle = k
+        kit.servo[10].angle = k
+        time.sleep(0.001)
+    
     time.sleep(0.5)
-    kit.servo[1].angle = 75
-    kit.servo[4].angle = 75
+    for k in range(90, 75, -1):
+        kit.servo[1].angle = k
+        kit.servo[4].angle = k
+        time.sleep(0.001)
+    
     kit.servo[7].angle = 80
     kit.servo[10].angle = 85
 
 def sit_down():
     print("sitting down")
-    kit.servo[1].angle = 90
-    kit.servo[4].angle = 90
-    kit.servo[7].angle = 100
-    kit.servo[10].angle = 100
-    time.sleep(0.5)
-    kit.servo[1].angle = 120
-    kit.servo[4].angle = 120
-    kit.servo[7].angle = 130
-    kit.servo[10].angle = 130
+    for k in range(75, 120, 1):
+        kit.servo[1].angle = k
+        kit.servo[4].angle = k
+        time.sleep(0.001)
+    
+    for k in range(85, 130, 1):
+        kit.servo[7].angle = k
+        kit.servo[10].angle = k
+        time.sleep(0.001)
+
     time.sleep(2)
     start_position()
 
@@ -374,15 +384,40 @@ def move1():
     print("rf")
     #time.sleep(10)
     start_position()
-    #time.sleep(2)
+    time.sleep(2)
     ready_legs()
-    #time.sleep(2)
+    time.sleep(2)
     stand_up()
     #time.sleep(10)
     #sit_down()
     
 def move2():
-    print("lf")
+    print("push ups...")
+    sit_down()
+    time.sleep(0.2)
+    # legs back
+    kit.servo[3].angle = 75# back Fl
+    time.sleep(0.2)
+    kit.servo[9].angle = 165#back bl
+    time.sleep(0.2)
+    kit.servo[0].angle = 110#back rf
+    kit.servo[6].angle = 15#back br
+    # show some muscles
+    kit.servo[1].angle = 150
+    kit.servo[4].angle = 160
+    time.sleep(0.5)
+    kit.servo[2].angle = 165
+    kit.servo[5].angle = 165
+    for i in range(3):
+      for j in range(150,100,-1):
+        kit.servo[1].angle = j
+        kit.servo[4].angle = j
+        time.sleep(0.05)
+        
+      for k in range(100, 150, 1):
+        kit.servo[1].angle = k
+        kit.servo[4].angle = k
+        time.sleep(0.05)
 
 def move3():
     print("rb")
