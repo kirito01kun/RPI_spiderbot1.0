@@ -421,10 +421,10 @@ def move2():
     
     
     ready_legs()
-    kit.servo[2].angle = 0#Front Right 3
-    kit.servo[5].angle = 0#Front Left 3
-    kit.servo[8].angle = 0#Back Right 3
-    kit.servo[11].angle = 0#Back Left 3
+    kit.servo[0].angle = 140#Front Right 1
+    kit.servo[3].angle = 45#Front Left 1
+    kit.servo[6].angle = 45#Back Right 1
+    kit.servo[9].angle = 135#Back Left 1
     time.sleep(0.2)
     stand_up()
     
