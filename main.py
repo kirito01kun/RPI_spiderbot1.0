@@ -398,10 +398,10 @@ def move2():
     # legs back
     kit.servo[3].angle = 75# back Fl
     time.sleep(0.2)
-    kit.servo[9].angle = 165#back bl
+    kit.servo[9].angle = 180#back bl
     time.sleep(0.2)
     kit.servo[0].angle = 110#back rf
-    kit.servo[6].angle = 15#back br
+    kit.servo[6].angle = 0#back br
     # show some muscles
     kit.servo[1].angle = 140
     kit.servo[4].angle = 140
@@ -409,15 +409,15 @@ def move2():
     kit.servo[2].angle = 165
     kit.servo[5].angle = 165
     for i in range(3):
-      for j in range(140,80,-1):
+      for j in range(130,80,-1):
         kit.servo[1].angle = j
         kit.servo[4].angle = j
-        time.sleep(0.05)
+        time.sleep(0.01)
         
-      for k in range(80, 140, 1):
+      for k in range(80, 130, 1):
         kit.servo[1].angle = k
         kit.servo[4].angle = k
-        time.sleep(0.05)
+        time.sleep(0.01)
 
 def move3():
     print("rb")
