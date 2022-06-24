@@ -631,7 +631,7 @@ def move4():
         kit.servo[11].angle = 110 + j
         time.sleep(0.001)
     
-    for i in range(3):
+    for i in range(5):
       #Front
       for j in range(0, 40, 1):
         kit.servo[1].angle = 75 - j
