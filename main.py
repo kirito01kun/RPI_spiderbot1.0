@@ -409,7 +409,8 @@ def move2():
     time.sleep(0.5)
     kit.servo[2].angle = 165
     kit.servo[5].angle = 165
-    for i in range(3):
+    
+    for i in range(2):
       for j in range(130,80,-1):
         kit.servo[1].angle = j
         kit.servo[4].angle = j
@@ -420,6 +421,27 @@ def move2():
         kit.servo[4].angle = k
         time.sleep(0.01)
     
+    for i in range(3):
+      for j in range(130,80,-1):
+        kit.servo[1].angle = j
+        kit.servo[4].angle = j
+        time.sleep(0.001)
+        
+      for k in range(80, 130, 1):
+        kit.servo[1].angle = k
+        kit.servo[4].angle = k
+        time.sleep(0.001)
+    
+    for i in range(2):
+      for j in range(130,80,-1):
+        kit.servo[1].angle = j
+        kit.servo[4].angle = j
+        time.sleep(0.01)
+        
+      for k in range(80, 130, 1):
+        kit.servo[1].angle = k
+        kit.servo[4].angle = k
+        time.sleep(0.01)
     
     print("ready legs")
     #front right Leg
