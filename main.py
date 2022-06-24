@@ -405,7 +405,7 @@ def turn_right():
 def move1():
     global stand
     #time.sleep(10)
-    if stand:
+    if not stand:
       start_position()
       time.sleep(2)
       ready_legs()
