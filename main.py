@@ -486,6 +486,8 @@ def move2():
     
 def move3():
     print("move 3")
+    sit_down()
+    time.sleep(0.3)
     for i in range(2):
       for x in range(0, 50, 1):
         kit.servo[2].angle = x#Front Right 
