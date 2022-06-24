@@ -463,8 +463,77 @@ def move2():
     
     
 def move3():
-    print("rb")
-
+    print("move 3")
+    for i in range(2):
+      for x in range(0, 50, 1):
+        kit.servo[2].angle = x#Front Right 
+        kit.servo[5].angle = x#Front Left 
+        kit.servo[8].angle = x#Back Right 3
+        kit.servo[11].angle = x# back left
+        kit.servo[1].angle = 45 + x
+        kit.servo[4].angle = 45 + x
+        kit.servo[7].angle = 45 + x
+        kit.servo[10].angle = 45 + x
+        time.sleep(0.01)
+    
+      for x in range(50, 0, -1):
+        kit.servo[2].angle = x#Front Right 
+        kit.servo[5].angle = x#Front Left 3
+        kit.servo[8].angle = x#Back Right 3
+        kit.servo[11].angle = x# back left 
+        kit.servo[1].angle = 45 + x
+        kit.servo[4].angle = 45 + x
+        kit.servo[7].angle = 45 + x
+        kit.servo[10].angle = 45 + x
+        time.sleep(0.01)
+    
+    for i in range(5):
+      for x in range(0, 50, 1):
+        kit.servo[2].angle = x#Front Right 
+        kit.servo[5].angle = x#Front Left 
+        kit.servo[8].angle = x#Back Right 3
+        kit.servo[11].angle = x# back left
+        kit.servo[1].angle = 45 + x
+        kit.servo[4].angle = 45 + x
+        kit.servo[7].angle = 45 + x
+        kit.servo[10].angle = 45 + x
+        time.sleep(0.001)
+    
+      for x in range(50, 0, -1):
+        kit.servo[2].angle = x#Front Right 
+        kit.servo[5].angle = x#Front Left 3
+        kit.servo[8].angle = x#Back Right 3
+        kit.servo[11].angle = x# back left 
+        kit.servo[1].angle = 45 + x
+        kit.servo[4].angle = 45 + x
+        kit.servo[7].angle = 45 + x
+        kit.servo[10].angle = 45 + x
+        time.sleep(0.001)
+    
+    for i in range(2):
+      for x in range(0, 50, 1):
+        kit.servo[2].angle = x#Front Right 
+        kit.servo[5].angle = x#Front Left 
+        kit.servo[8].angle = x#Back Right 3
+        kit.servo[11].angle = x# back left
+        kit.servo[1].angle = 45 + x
+        kit.servo[4].angle = 45 + x
+        kit.servo[7].angle = 45 + x
+        kit.servo[10].angle = 45 + x
+        time.sleep(0.01)
+    
+      for x in range(50, 0, -1):
+        kit.servo[2].angle = x#Front Right 
+        kit.servo[5].angle = x#Front Left 3
+        kit.servo[8].angle = x#Back Right 3
+        kit.servo[11].angle = x# back left 
+        kit.servo[1].angle = 45 + x
+        kit.servo[4].angle = 45 + x
+        kit.servo[7].angle = 45 + x
+        kit.servo[10].angle = 45 + x
+        time.sleep(0.01)
+    
+      
 def move4():
     print("lb")
 
