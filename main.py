@@ -792,11 +792,11 @@ def move4():
       kit.servo[8].angle = 110 + j
       time.sleep(0.05)
 
+stand = False
 
 def game_loop():
     clock = pygame.time.Clock()
     run = True
-    stand = False
     while run:
         clock.tick(FPS)
         for event in pygame.event.get():
