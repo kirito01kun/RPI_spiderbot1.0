@@ -600,7 +600,7 @@ def move4():
         kit.servo[7].angle = 40 + j
         kit.servo[10].angle = 45 + j
         kit.servo[8].angle = 110 + j
-        kit.servo[5].angle = 110 + j
+        kit.servo[11].angle = 110 + j
         time.sleep(0.01)
 
 
