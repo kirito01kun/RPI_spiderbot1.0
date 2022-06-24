@@ -403,15 +403,18 @@ def turn_right():
     
     
 def move1():
-    print("rf")
     #time.sleep(10)
-    start_position()
-    time.sleep(2)
-    ready_legs()
-    time.sleep(2)
-    stand_up()
+    if stand:
+      start_position()
+      time.sleep(2)
+      ready_legs()
+      time.sleep(2)
+      stand_up()
+      stand = True
     #time.sleep(10)
-    #sit_down()
+    else:
+      sit_down()
+      stand = False
     
 def move2():
     print("push ups...")
@@ -792,6 +795,7 @@ def move4():
 def game_loop():
     clock = pygame.time.Clock()
     run = True
+    stand = False
     while run:
         clock.tick(FPS)
         for event in pygame.event.get():
