@@ -414,7 +414,6 @@ def move1():
     #sit_down()
     
 def move2():
-    time.sleep(10)
     print("push ups...")
     sit_down()
     time.sleep(0.2)
