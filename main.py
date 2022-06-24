@@ -635,57 +635,6 @@ def move4():
         kit.servo[11].angle = 110 + j
         time.sleep(0.001)
     
-    for i in range(3):
-      #Front
-      for j in range(0, 40, 1):
-        kit.servo[1].angle = 75 - j
-        kit.servo[4].angle = 75 - j
-        kit.servo[2].angle = 165 - j
-        kit.servo[5].angle = 165 - j
-        
-      for j in range(0, 40, 1):
-        kit.servo[1].angle = 35 + j
-        kit.servo[4].angle = 35 + j
-        kit.servo[2].angle = 125 + j
-        kit.servo[5].angle = 125 + j
-        
-      #Left
-      for j in range(0, 40, 1):
-        kit.servo[4].angle = 75 - j
-        kit.servo[5].angle = 165 - j
-        kit.servo[10].angle = 80 - j
-        kit.servo[11].angle = 150 - j
-        
-      for j in range(0, 40, 1):
-        kit.servo[4].angle = 35 + j
-        kit.servo[5].angle = 125 + j
-        kit.servo[10].angle = 40 + j
-        kit.servo[11].angle = 110 + j
-      #back
-      for j in range(0, 40, 1):
-        kit.servo[7].angle = 80 - j
-        kit.servo[10].angle = 85 - j
-        kit.servo[8].angle = 150 - j
-        kit.servo[11].angle = 150 - j
-        
-      for j in range(0, 40, 1):
-        kit.servo[7].angle = 40 + j
-        kit.servo[10].angle = 45 + j
-        kit.servo[8].angle = 110 + j
-        kit.servo[11].angle = 110 + j
-        
-      #Right
-      for j in range(0, 40, 1):
-        kit.servo[1].angle = 75 - j
-        kit.servo[2].angle = 165 - j
-        kit.servo[7].angle = 80 - j
-        kit.servo[8].angle = 150 - j
-        
-      for j in range(0, 40, 1):
-        kit.servo[1].angle = 35 + j
-        kit.servo[2].angle = 125 + j
-        kit.servo[7].angle = 40 + j
-        kit.servo[8].angle = 110 + j
     for i in range(2):
       #Front
       for j in range(0, 40, 1):
@@ -693,104 +642,103 @@ def move4():
         kit.servo[4].angle = 75 - j
         kit.servo[2].angle = 165 - j
         kit.servo[5].angle = 165 - j
-        time.sleep(0.01)
+        
       for j in range(0, 40, 1):
         kit.servo[1].angle = 35 + j
         kit.servo[4].angle = 35 + j
         kit.servo[2].angle = 125 + j
         kit.servo[5].angle = 125 + j
-        time.sleep(0.01)
+        
       #Left
       for j in range(0, 40, 1):
         kit.servo[4].angle = 75 - j
         kit.servo[5].angle = 165 - j
         kit.servo[10].angle = 80 - j
         kit.servo[11].angle = 150 - j
-        time.sleep(0.01)
+        
       for j in range(0, 40, 1):
         kit.servo[4].angle = 35 + j
         kit.servo[5].angle = 125 + j
         kit.servo[10].angle = 40 + j
         kit.servo[11].angle = 110 + j
-        time.sleep(0.01)
       #back
       for j in range(0, 40, 1):
         kit.servo[7].angle = 80 - j
         kit.servo[10].angle = 85 - j
         kit.servo[8].angle = 150 - j
         kit.servo[11].angle = 150 - j
-        time.sleep(0.01)
+        
       for j in range(0, 40, 1):
         kit.servo[7].angle = 40 + j
         kit.servo[10].angle = 45 + j
         kit.servo[8].angle = 110 + j
         kit.servo[11].angle = 110 + j
-        time.sleep(0.01)
+        
       #Right
       for j in range(0, 40, 1):
         kit.servo[1].angle = 75 - j
         kit.servo[2].angle = 165 - j
         kit.servo[7].angle = 80 - j
         kit.servo[8].angle = 150 - j
-        time.sleep(0.01)
+        
       for j in range(0, 40, 1):
         kit.servo[1].angle = 35 + j
         kit.servo[2].angle = 125 + j
         kit.servo[7].angle = 40 + j
         kit.servo[8].angle = 110 + j
+    #Front
+    for j in range(0, 40, 1):
+        kit.servo[1].angle = 75 - j
+        kit.servo[4].angle = 75 - j
+        kit.servo[2].angle = 165 - j
+        kit.servo[5].angle = 165 - j
         time.sleep(0.01)
-    
     for j in range(0, 40, 1):
-      kit.servo[1].angle = 75 - j
-      kit.servo[4].angle = 75 - j
-      kit.servo[2].angle = 165 - j
-      kit.servo[5].angle = 165 - j
-      time.sleep(0.05)
-    for j in range(0, 40, 1):
-      kit.servo[1].angle = 35 + j
-      kit.servo[4].angle = 35 + j
-      kit.servo[2].angle = 125 + j
-      kit.servo[5].angle = 125 + j
-      time.sleep(0.05)
+        kit.servo[1].angle = 35 + j
+        kit.servo[4].angle = 35 + j
+        kit.servo[2].angle = 125 + j
+        kit.servo[5].angle = 125 + j
+        time.sleep(0.01)
     #Left
     for j in range(0, 40, 1):
-      kit.servo[4].angle = 75 - j
-      kit.servo[5].angle = 165 - j
-      kit.servo[10].angle = 80 - j
-      kit.servo[11].angle = 150 - j
-      time.sleep(0.05)
+        kit.servo[4].angle = 75 - j
+        kit.servo[5].angle = 165 - j
+        kit.servo[10].angle = 80 - j
+        kit.servo[11].angle = 150 - j
+        time.sleep(0.01)
     for j in range(0, 40, 1):
-      kit.servo[4].angle = 35 + j
-      kit.servo[5].angle = 125 + j
-      kit.servo[10].angle = 40 + j
-      kit.servo[11].angle = 110 + j
-      time.sleep(0.05)
+        kit.servo[4].angle = 35 + j
+        kit.servo[5].angle = 125 + j
+        kit.servo[10].angle = 40 + j
+        kit.servo[11].angle = 110 + j
+        time.sleep(0.01)
     #back
     for j in range(0, 40, 1):
-      kit.servo[7].angle = 80 - j
-      kit.servo[10].angle = 85 - j
-      kit.servo[8].angle = 150 - j
-      kit.servo[11].angle = 150 - j
-      time.sleep(0.05)
+        kit.servo[7].angle = 80 - j
+        kit.servo[10].angle = 85 - j
+        kit.servo[8].angle = 150 - j
+        kit.servo[11].angle = 150 - j
+        time.sleep(0.01)
     for j in range(0, 40, 1):
-      kit.servo[7].angle = 40 + j
-      kit.servo[10].angle = 45 + j
-      kit.servo[8].angle = 110 + j
-      kit.servo[11].angle = 110 + j
-      time.sleep(0.05)
+        kit.servo[7].angle = 40 + j
+        kit.servo[10].angle = 45 + j
+        kit.servo[8].angle = 110 + j
+        kit.servo[11].angle = 110 + j
+        time.sleep(0.01)
     #Right
     for j in range(0, 40, 1):
-      kit.servo[1].angle = 75 - j
-      kit.servo[2].angle = 165 - j
-      kit.servo[7].angle = 80 - j
-      kit.servo[8].angle = 150 - j
-      time.sleep(0.05)
+        kit.servo[1].angle = 75 - j
+        kit.servo[2].angle = 165 - j
+        kit.servo[7].angle = 80 - j
+        kit.servo[8].angle = 150 - j
+        time.sleep(0.01)
     for j in range(0, 40, 1):
-      kit.servo[1].angle = 35 + j
-      kit.servo[2].angle = 125 + j
-      kit.servo[7].angle = 40 + j
-      kit.servo[8].angle = 110 + j
-      time.sleep(0.05)
+        kit.servo[1].angle = 35 + j
+        kit.servo[2].angle = 125 + j
+        kit.servo[7].angle = 40 + j
+        kit.servo[8].angle = 110 + j
+        time.sleep(0.01)
+     
 
 stand = False
 
